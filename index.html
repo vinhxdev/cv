@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝓥𝓲𝓷𝓱 𝓟𝓻𝓸𝓯𝓲𝓵𝓮</title>
+    <style>
+        /* Đặt GIF làm nền */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://media.giphy.com/media/d3mmbyHajkzxivwA/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden; /* Đảm bảo không có thanh cuộn khi hiệu ứng xuất hiện */
+        }
+        /* Tiêu đề đầu trang với hiệu ứng nổi bật */
+        .header {
+            text-align: center;
+            color: #FF8C00; /* Màu cam đậm */
+            font-size: 3vw; /* Kích thước chữ theo tỷ lệ phần trăm của chiều rộng cửa sổ */
+            margin-top: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 
+                         0 0 10px #FF8C00, 
+                         0 0 20px #FF8C00, 
+                         0 0 30px #FF4500;
+        }
+        /* Các nút liên kết */
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .social-buttons a {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 2vw; /* Kích thước chữ theo tỷ lệ phần trăm của chiều rộng cửa sổ */
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); /* Nền trong suốt một chút */
+            text-align: center;
+            width: 160px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Thêm hiệu ứng chuyển tiếp */
+        }
+        .social-buttons a:hover {
+            background-color: rgba(255, 140, 0, 0.7); /* Màu cam đậm khi hover */
+        }
+        .social-buttons a:active {
+            transform: scale(0.95); /* Hiệu ứng thu nhỏ khi nhấn */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng đổ khi nhấn */
+        }
+        .social-buttons a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        /* Đặt dòng chữ nổi bật và nút Play */
+        .highlight-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .highlight-text {
+            color: #FF4500; /* Màu cam sáng */
+            font-size: 2.5vw; /* Kích thước chữ theo tỷ lệ phần trăm của chiều rộng cửa sổ */
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+                         0 0 10px #FF4500,
+                         0 0 20px #FF4500;
+        }
+        .play-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 2vw; /* Kích thước chữ theo tỷ lệ phần trăm của chiều rộng cửa sổ */
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); /* Nền trong suốt một chút */
+            text-align: center;
+            width: 120px;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển tiếp */
+        }
+        .play-button:hover {
+            background-color: rgba(255, 140, 0, 0.7); /* Màu cam đậm khi hover */
+        }
+        .play-button:active {
+            transform: scale(0.95); /* Hiệu ứng thu nhỏ khi nhấn */
+        }
+        .play-button::before {
+            content: '▶'; /* Ký hiệu nút Play */
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        /* Đặt dòng chữ ở góc trái cuối trang với hiệu ứng nổi bật */
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #FF8C00; /* Màu cam đậm */
+            font-size: 1.5vw; /* Kích thước chữ theo tỷ lệ phần trăm của chiều rộng cửa sổ */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+                         0 0 10px #FF8C00, 
+                         0 0 20px #FF8C00, 
+                         0 0 30px #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        𝓥𝓲𝓷𝓱 𝓟𝓻𝓸𝓯𝓲𝓵𝓮
+    </div>
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/nguyenvinhtriowo" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            Facebook
+        </a>
+        <a href="https://www.tiktok.com/@aetmonkey" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/TikTok_icon.svg" alt="TikTok">
+            TikTok
+        </a>
+    </div>
+    <div class="highlight-section">
+        <div class="highlight-text">
+            𝓒𝓗𝓘𝓛𝓛 𝓦 𝓜𝓔
+        </div>
+        <a href="#" class="play-button" onclick="playMusic()">
+            Play
+        </a>
+    </div>
+    <div class="footer">
+        ©Nguyen Ngoc Tri Vinh
+    </div>
+
+    <script>
+        function playMusic() {
+            var width = Math.min(window.innerWidth * 0.8, 800); // Tối đa 800px rộng
+            var height = Math.min(window.innerHeight * 0.8, 600); // Tối đa 600px cao
+            window.open('https://www.youtube.com/watch?v=MuMBOrp_RLc&t=8s', '_blank', `width=${width},height=${height}`);
+        }
+    </script>
+</body>
+</html>
